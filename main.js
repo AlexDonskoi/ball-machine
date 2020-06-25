@@ -52,7 +52,7 @@ $(function(){
   $(".submit").on("click", function(){
     $.ajax({
       type: "GET",
-      url: docuemnt.referrer + "./fire?set="+values.reduce((agg, cur) =>agg + cur, '')
+      url: document.referrer + "./fire?set="+values.reduce((agg, cur) =>agg + cur, '')
     });
   })
 })
